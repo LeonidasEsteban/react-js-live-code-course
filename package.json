@@ -2,6 +2,7 @@
   "name": "social-media-dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://leonidasesteban.github.io/react-js-live-code-course/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
