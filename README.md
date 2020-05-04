@@ -1,4 +1,4 @@
-# React.js Live Course
+# React.js Free Live Course
 - Try the live demo 👉 https://leonidasesteban.github.io/react-js-live-code-course/
 - Watch the free React.js course on Youtube https://www.youtube.com/watch?v=-K4zonaIrV8
 
