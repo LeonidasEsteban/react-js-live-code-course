@@ -4,8 +4,10 @@ import Header from './header.js'
 import TopCardList from './top-card-list.js'
 import Overview from './overview.js'
 import Switch from './switch'
+import Ghost from "./Ghost";
 
 function App() {
+  const [showGhost] = useState(true)
   const [darkMode, setDarkMode] = useState(false)
   const [checked, setChecked] = useState(false)
   const mainClass = darkMode ? 'is-dark-mode' : 'is-light-mode'
@@ -34,8 +36,13 @@ function App() {
           setChecked={setChecked}
         />
       </Header>
-      <TopCardList />
-      <Overview />
+      {!showGhost && (
+        <>
+          <TopCardList />
+          <Overview />
+        </>
+      )}
+      {showGhost && <Ghost darkMode={darkMode}/>}
     </main>
   )
 }
