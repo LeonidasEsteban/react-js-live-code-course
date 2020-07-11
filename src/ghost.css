@@ -1,0 +1,49 @@
+/*ghost*/
+
+#ghost {
+    margin: auto;
+    width: fit-content;
+    animation: floaty 4s infinite, ghosty 7s infinite;
+}
+
+#shadow {
+    margin: auto;
+    width: fit-content;
+    /*background: var(--shadow);*/
+    background: var(--switch);
+    width: 160px;
+    height: 40px;
+    border-radius: 50%;
+    animation: zoomy 4s infinite, ghosty 7s infinite;
+    opacity: 0.7;
+}
+
+.is-dark-mode #shadow{
+    width: 260px;
+}
+@keyframes floaty {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes zoomy {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+}
+
+@keyframes ghosty {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
